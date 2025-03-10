@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Creative - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="./assets/auto.jpg" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+          body, html {
+              margin: 0;
+              padding: 0;
+              height: 100%;
+          }
+  
+          /* Splashscreen mit Bild */
+          .splash-screen {
+              background-image: url('./veyron.jpg');
+              background-size: cover;
+              background-position: center;
+              width: 100%;
+              height: 100vh;
+              position: absolute;
+              top: 0;
+              left: 0;
+          }
+  
+          /* Der Inhalt der nächsten Seite ist zunächst verborgen */
+          .content {
+              display: none;
+          }
+      </style>
+        
+
+    </head>
+
+     
+      
+  </div>
+
+ 
+    
+
+
+    <body id="page-top">
+<!-- Splashscreen -->
+<div class="splash-screen"></div>
+
+
+    
+</div>
+
+<script>
+    // Nach 3 Sekunden (3000 Millisekunden) die Seite wechseln
+    setTimeout(function() {
+        // Splashscreen ausblenden
+        document.querySelector('.splash-screen').style.display = 'none';
+
+        // Den nächsten Inhalt anzeigen
+        document.querySelector('.content').style.display = 'block';
+    }, 3000); // 3 Sekunden
+</script>
+      
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Classic Drive</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Classic Drive</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Willkommen bei Classic Drive – Wo die Leidenschaft für klassische Fahrzeuge auf höchste Qualität trifft.</p>
+                        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+         <!-- About-->
+         <section class="page-section bg-primary" id="about">
+          <div class="container px-4 px-lg-5">
+              <div class="row gx-4 gx-lg-5 justify-content-center">
+                  <div class="col-lg-8 text-center">
+                      <h2 class="text-white mt-0">Über uns</h2>
+                      <hr class="divider divider-light" />
+                      <p class="text-white-75 mb-4">Bei Classic Drive finden Sie hochwertige Oldtimer und automobile Klassiker, die durch ihre Geschichte und Eleganz bestechen. Wir bieten Ihnen eine exklusive Auswahl und fachkundige Beratung, damit Ihr Traumauto Wirklichkeit wird. Qualität und Leidenschaft stehen bei uns an erster Stelle.</p>
+                      
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+  <!-- Autos-->
+
+  
+      
+
+  <!-- Erste Reihe -->
+  <div class="container">
+    <h1 class="ueberschrift text-center">Autos zu Verkauf</h1>
+    <div class="row">
+      <!-- Modell 1 -->
+      <div class="col-md-3 mb-4">       
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./veyron.jpg" alt="./veyron.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Bugatti Veyron</h5>
+            
+            <!-- Button für das Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modell 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./carrera gt.jpg" alt="Car Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Porsche Carrera GT</h5>
+          
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modell 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./diablo.jpg" alt="Car Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Lamborghini Diablo</h5>
+           
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modell 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./slr.jpg" alt="Car Image 4">
+          <div class="card-body">
+            <h5 class="card-title">Mercedes McLaren SLR</h5>
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Modal für Modell 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Bugatti Veyron</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./veyron.jpg" class="img-fluid" alt="Auto Modell 1">
+          <p>Der Bugatti Veyron setzt Maßstäbe in Sachen Leistung und Luxus. Mit über 1.000 PS und einer Höchstgeschwindigkeit von 400 km/h vereint dieser Supersportwagen atemberaubendes Design mit unschlagbarer Technik..</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal für Modell 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Porsche Carrera GT</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./carrera gt.jpg" class="img-fluid" alt="Auto Modell 2">
+          <p>Der Porsche Carrera GT ist ein Meisterwerk der Ingenieurskunst. Mit einem V10-Motor und einer unverwechselbaren Fahrdynamik bietet er unvergessliche Leistung auf jeder Strecke – ein Traum für jeden Sportwagenliebhaber.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal für Modell 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p>Lamborghini Diablo</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./diablo.jpg" class="img-fluid" alt="Auto Modell 3">
+            <p>Der Lamborghini Diablo verkörpert pure Leidenschaft und grenzenlose Power. Mit seiner markanten Linienführung und dem V12-Motor ist er nicht nur ein Symbol für italienische Exklusivität, sondern auch für unvergleichliche Geschwindigkeit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Modal für Modell 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Mercedes McLaren SLR</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./slr.jpg" class="img-fluid" alt="Auto Modell 4">
+          <p>Der Mercedes McLaren SLR vereint Luxus mit Rennsporttechnologie. Mit seinem 5,4-Liter-Kompressormotor und einer Höchstgeschwindigkeit von über 330 km/h ist der SLR eine Ikone des High-Performance-Sportwagens.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+   
+  
+  
+
+  <!-- Zweite Reihe -->
+<div class="container">
+
+    <div class="row">
+      <!-- Modell 5 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./e36.jpg" alt="Car Image 1">
+          <div class="card-body">
+            <h5 class="card-title">BMW E36</h5>
+            
+            <!-- Button für das Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modell 6 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./e39.webp" alt="Car Image 2">
+          <div class="card-body">
+            <h5 class="card-title">BMW E39</h5>
+          
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modell 7 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./e38.jpg" alt="Car Image 3">
+          <div class="card-body">
+            <h5 class="card-title">BMW E38</h5>
+           
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal7">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modell 8 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./61viDYNWw6L.jpg" alt="Car Image 4">
+          <div class="card-body">
+            <h5 class="card-title">BMW E30</h5>
+         
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal8">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal für Modell 5 -->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>BMW E36</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./e36.jpg" class="img-fluid" alt="Auto Modell 1">
+          <p>Der BMW E36 überzeugt durch seine sportliche Fahrweise und klassische Eleganz. Mit einer perfekten Balance aus Leistung und Komfort ist dieser Klassiker für BMW-Fans ein Must-Have.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal für Modell 6 -->
+  <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>BMW E39</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./e39.webp" class="img-fluid" alt="Auto Modell 1">
+          <p>Der BMW E39 setzt Maßstäbe in seiner Klasse – mit kraftvollen Motoren, einer herausragenden Fahrdynamik und einem luxuriösen Innenraum. Ein wahres Meisterstück der 5er-Reihe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal für Modell 7 -->
+  <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>BMW E38</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./e38.jpg" class="img-fluid" alt="Auto Modell 1">
+          <p>Der BMW E38 ist der Inbegriff von Luxus und Stil. Mit seinem eleganten Design und herausragendem Fahrkomfort bietet er ein außergewöhnliches Erlebnis für alle, die mehr als nur ein Auto suchen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal für Modell 8 -->
+  <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>BMW E30</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./61viDYNWw6L.jpg" class="img-fluid" alt="Auto Modell 1">
+          <p>Der BMW E30 ist ein Klassiker, der die Herzen der BMW-Enthusiasten höher schlagen lässt. Mit seinem zeitlosen Design und herausragender Fahrfreude ist dieser Wagen ein wahres Meisterwerk der Automobilgeschichte.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!-- Erste Container -->
+<div class="container">
+    <h1 class="ueberschrift text-center">Autos zu mieten</h1>
+    <div class="row">
+      <!-- Erste Reihe der Autos -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./Ferrari_F8_Tributo_DSC_7013.jpg" alt="Car Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Ferrari F8</h5>
+           
+            <!-- Button für das Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Wiederhole für jedes Modell -->
+      <!-- Modell 10 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./amg gt.jpg" alt="Car Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Mercedes AMG GT 63s</h5>
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal10">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Weitere Modelle hier -->
+      <!-- Modell 11 -->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./f765c27b-32f5-4b73-a34d-1e2d5ec4d1a9-img-5456-min.webp" alt="Car Image 3">
+          <div class="card-body">
+            <h5 class="card-title">BMW M4 Competition</h5>
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal11">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modell 12-->
+      <div class="col-md-3 mb-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="./porsche.992.turbos.moshammer.aero_.kit_.front_.spoiler.3.jpg" alt="Car Image 4">
+          <div class="card-body">
+            <h5 class="card-title">Porsche 992 Turbo S</h5>
+           
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal12">
+              Mehr 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal für Model 9-->
+    <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p>Ferrari F8</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./Ferrari_F8_Tributo_DSC_7013.jpg" class="img-fluid" alt="Auto Modell 1">
+            <p>Der Ferrari F8 Tributo ist ein Meisterwerk der italienischen Ingenieurskunst. Mit über 700 PS und seinem eleganten Design verkörpert er alles, wofür Ferrari steht: Geschwindigkeit, Luxus und unvergessliche Fahrmomente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal für Model 10-->
+    <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p>Mercedes AMG GT 63s</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./amg gt.jpg" class="img-fluid" alt="Auto Modell 1">
+            <p>Der Mercedes AMG GT 63s ist der ultimative Performance-Luxuswagen. Mit seinem V8-Biturbo-Motor und einer Beschleunigung von 0 auf 100 km/h in nur 3,2 Sekunden ist er die perfekte Kombination aus Dynamik und Exklusivität.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal für Modell 11 -->
+  <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>BMW M4 Competition</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./f765c27b-32f5-4b73-a34d-1e2d5ec4d1a9-img-5456-min.webp" class="img-fluid" alt="Auto Modell 1">
+          <p>Der BMW M4 Competition steht für pure Fahrfreude. Mit seinem 510 PS starken Motor und der perfekten Balance aus Leistung und Handling sorgt er für ein unvergleichliches Fahrerlebnis auf jeder Strecke.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal für Model 12-->
+  <div class="modal fade" id="modal12" tabindex="-12" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Porsche 992 Turbo S</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./porsche.992.turbos.moshammer.aero_.kit_.front_.spoiler.3.jpg" class="img-fluid" alt="Auto Modell 12">
+          <p>Der Porsche 992 Turbo S ist der Inbegriff von Präzision und Leistung. Mit 650 PS und einer Beschleunigung von 0 auf 100 km/h in nur 2,7 Sekunden setzt er neue Maßstäbe im Bereich der Supersportwagen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <!-- Bootstrap JS und Popper.js für das Modal-Fenster -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
+  
+
+
+ 
+       
+        
+         <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Kommen Sie bei Interesse mit uns in Kontakt</h2>
+                        <hr class="divider" />
+                      
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                        <div>+1 (555) 123-4567</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
